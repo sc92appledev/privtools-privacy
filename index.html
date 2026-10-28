@@ -1,533 +1,165 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <meta name="color-scheme" content="light dark">
-  <title>Informativa sulla privacy — PrivTools</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --fg: #202124;
-      --muted: #5f6368;
-      --line: #dadce0;
-      --link: #1769aa;
-      --panel: #f5f7f9;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #151515;
-        --fg: #ededed;
-        --muted: #b0b0b0;
-        --line: #3a3a3a;
-        --link: #8ab4f8;
-        --panel: #222222;
-      }
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 32px 22px 48px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.7;
-      color: var(--fg);
-      background: var(--bg);
-      overflow-wrap: anywhere;
-    }
-
-    h1, h2, h3 { line-height: 1.3; }
-
-    h1 {
-      font-size: clamp(2rem, 6vw, 2.7rem);
-      letter-spacing: -0.04em;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.45rem;
-    }
-
-    a { color: var(--link); }
-
-    .subtitle, .muted, footer { color: var(--muted); }
-
-    .languages {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 14px;
-      margin: 24px 0 32px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: var(--panel);
-    }
-
-    .languages a {
-      display: inline-block;
-      padding: 5px 10px;
-      text-decoration: none;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      font-weight: 600;
-    }
-
-    .languages a:hover { text-decoration: underline; }
-
-    .app {
-      padding: 16px 18px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: var(--panel);
-    }
-
-    .app p:last-child { margin-bottom: 0; }
-
-    section {
-      padding-top: 8px;
-      margin-top: 24px;
-      border-top: 1px solid var(--line);
-    }
-
-    .language-label {
-      margin-top: 42px;
-      padding-top: 18px;
-      border-top: 2px solid var(--line);
-      color: var(--muted);
-      font-size: .85rem;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid var(--line);
-      font-size: .9rem;
-    }
-
-    @media print {
-      .languages { display: none; }
-      body { max-width: none; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — PrivTools</title>
+<style>
+:root{color-scheme:light dark;--fg:#222;--bg:#fff;--muted:#666;--line:#ccc;--panel:#f3f4f6}
+@media(prefers-color-scheme:dark){:root{--fg:#eee;--bg:#151515;--muted:#bbb;--line:#444;--panel:#222}}
+*{box-sizing:border-box}
+body{max-width:850px;margin:auto;padding:30px 22px 48px;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--fg);background:var(--bg);overflow-wrap:anywhere}
+h1{font-size:2.4rem;letter-spacing:-.04em}h2{margin-top:2rem;font-size:1.5rem}h3{margin-top:1.5rem}
+a{color:inherit}.muted,footer{color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;gap:10px;padding:14px;margin:24px 0;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+nav a{padding:5px 10px;border:1px solid var(--line);border-radius:8px;text-decoration:none}
+article{padding-top:12px;margin-top:28px;border-top:2px solid var(--line)}
+.app{padding:14px 18px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:.9rem}
+</style>
 </head>
 <body>
-  <header id="it">
-    <h1>PrivTools</h1>
-    <p class="subtitle">Informativa sulla privacy</p>
-    <p>Ultimo aggiornamento: 28 ottobre 2026</p>
-  </header>
+<header id="it">
+<h1>PrivTools</h1>
+<p>Informativa sulla privacy</p>
+<p class="muted">Ultimo aggiornamento: 28 ottobre 2026</p>
+</header>
+<nav aria-label="Lingua">
+<a href="#it" lang="it">Italiano</a>
+<a href="#en" lang="en">English</a>
+<a href="#fr" lang="fr">Français</a>
+<a href="#es" lang="es">Español</a>
+<a href="#de" lang="de">Deutsch</a>
+</nav>
 
-  <nav class="languages" aria-label="Seleziona la lingua">
-    <a href="#it" lang="it">Italiano</a>
-    <a href="#en" lang="en">English</a>
-    <a href="#fr" lang="fr">Français</a>
-    <a href="#es" lang="es">Español</a>
-    <a href="#de" lang="de">Deutsch</a>
-  </nav>
+<main>
+<article lang="it">
+<h2>1. Ambito di applicazione</h2>
+<p>Questa informativa riguarda le applicazioni distribuite con il marchio <strong>PrivTools</strong>. L'elenco verrà aggiornato man mano che saranno pubblicate nuove applicazioni. Le informazioni specifiche di ciascuna app prevalgono sulle descrizioni generali quando necessario.</p>
 
-  <main>
-    <!-- ITALIANO -->
-    <article lang="it">
-      <h2>Informativa sulla privacy di PrivTools</h2>
-      <p>
-        Questa informativa si applica alle applicazioni software
-        distribuite con il marchio <strong>PrivTools</strong>.
-        L'elenco delle applicazioni incluse è riportato qui sotto
-        e potrà essere aggiornato quando verranno pubblicate nuove app.
-      </p>
+<h2>2. Titolare e contatti</h2>
+<p><strong>Titolare:</strong> SIMONE CECERE, sviluppatore indipendente del progetto PrivTools.</p>
+<p><strong>Contatto privacy:</strong> <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.</p>
 
-      <h3>Applicazioni incluse</h3>
-      <div class="app">
-        <p><strong>Priv-TimeCalc</strong></p>
-        <p>
-          Calcolatrice temporale per sommare e sottrarre durate
-          ed effettuare conversioni tra unità di tempo.
-        </p>
-        <p>
-          Secondo il funzionamento attuale, i calcoli vengono eseguiti
-          localmente sul dispositivo. I valori inseriti e i risultati
-          non vengono trasmessi dallo sviluppatore a server remoti.
-          L'app non richiede un account e non integra intenzionalmente
-          pubblicità o strumenti di analisi di terze parti.
-        </p>
-      </div>
+<h2>3. Applicazioni attualmente incluse</h2>
+<div class="app">
+<h3>Priv-TimeCalc</h3>
+<p>Applicazione per sommare e sottrarre durate e convertire unità di tempo.</p>
+<p>I calcoli vengono eseguiti localmente sul dispositivo. In base al funzionamento attuale verificato, i valori inseriti e i risultati non vengono trasmessi dallo sviluppatore a server remoti. L'app non richiede un account e non integra intenzionalmente pubblicità o strumenti di analisi di terze parti.</p>
+</div>
 
-      <h3>Trattamento dei dati nelle applicazioni</h3>
-      <p>
-        Le pratiche relative ai dati possono differire tra le
-        applicazioni della suite. Le informazioni specifiche riportate
-        per ciascuna app prevalgono sulle descrizioni generali di questa
-        pagina. Le nuove applicazioni verranno aggiunte all'elenco con
-        informazioni aggiornate sulle rispettive funzionalità e sui
-        dati eventualmente trattati.
-      </p>
+<h2>4. Dati e finalità del trattamento</h2>
+<p>Priv-TimeCalc utilizza i valori inseriti esclusivamente per eseguire i calcoli richiesti e mostrare i risultati. I valori sono elaborati sul dispositivo e non sono inviati dal codice dell'app a un server remoto.</p>
+<p>Quando scegli di copiare un risultato, l'app utilizza gli appunti del sistema operativo. La gestione successiva del contenuto copiato dipende dal sistema operativo e dalle app che l'utente decide di utilizzare.</p>
+<p>L'app non richiede dati personali per creare un account e non raccoglie intenzionalmente dati per profilazione, pubblicità o analisi.</p>
 
-      <h3>Appunti del dispositivo</h3>
-      <p>
-        In Priv-TimeCalc, quando l'utente sceglie di copiare un risultato,
-        l'app utilizza la funzione degli appunti del sistema operativo.
-        Il contenuto copiato è soggetto al funzionamento e alle
-        impostazioni del dispositivo e del sistema operativo.
-      </p>
+<h2>5. Basi giuridiche</h2>
+<p>Per le funzionalità locali di Priv-TimeCalc, l'app non effettua, secondo il funzionamento descritto, una raccolta o trasmissione allo sviluppatore dei valori inseriti. Se una futura app comporterà un trattamento di dati personali, questa informativa verrà aggiornata indicando le finalità e la pertinente base giuridica prima dell'introduzione di tale trattamento, ove richiesto.</p>
+<p>Le eventuali richieste ricevute via email saranno trattate per rispondere alla richiesta e gestire la relativa comunicazione. La base giuridica dipenderà dalla natura della richiesta e dagli obblighi applicabili.</p>
 
-      <h3>Sistema operativo e distribuzione</h3>
-      <p>
-        Il sistema operativo, l'App Store e i servizi utilizzati per
-        distribuire o aggiornare le applicazioni possono trattare dati
-        tecnici secondo le proprie modalità e informative sulla privacy.
-        Tali trattamenti sono distinti dalle operazioni effettuate
-        direttamente dalle app PrivTools.
-      </p>
+<h2>6. Destinatari e conservazione</h2>
+<p>I dati inseriti in Priv-TimeCalc non sono trasmessi dallo sviluppatore a destinatari remoti. Le email inviate volontariamente al contatto indicato saranno accessibili al titolare e ai fornitori tecnici necessari a gestire la posta elettronica, secondo i rispettivi servizi e le loro informative.</p>
+<p>Le email saranno conservate per il tempo necessario a gestire la richiesta e, se applicabile, per adempiere a obblighi legali o tutelare diritti. I dati tecnici eventualmente trattati dal sistema operativo, dall'App Store o dall'hosting sono soggetti alle informative dei rispettivi fornitori.</p>
 
-      <h3>Privacy di questo sito</h3>
-      <p>
-        Questa pagina è ospitata tramite GitHub Pages. GitHub può
-        trattare dati tecnici, come indirizzi IP e log delle richieste,
-        per fornire e proteggere il servizio. Per ulteriori informazioni,
-        consulta la
-        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-          informativa sulla privacy di GitHub
-        </a>.
-      </p>
+<h2>7. Sito e hosting</h2>
+<p>Questa informativa è ospitata tramite GitHub Pages. Il provider può trattare dati tecnici, quali indirizzi IP e log delle richieste, per erogare e proteggere il servizio. Per maggiori informazioni consulta l'<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">informativa sulla privacy di GitHub</a>. Questo trattamento di hosting è distinto dal funzionamento locale dell'app.</p>
 
-      <h3>Aggiornamenti e contatti</h3>
-      <p>
-        Questa informativa potrà essere aggiornata in caso di nuove
-        applicazioni o modifiche alle funzionalità e alle modalità
-        di trattamento dei dati.
-      </p>
-      <p>
-        Per domande relative alla privacy, contatta:
-        <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-      </p>
-    </article>
+<h2>8. Diritti dell'interessato</h2>
+<p>Nei casi in cui la normativa sulla protezione dei dati si applichi al trattamento, puoi esercitare i diritti previsti dal GDPR, tra cui chiedere accesso, rettifica, cancellazione o limitazione del trattamento, opporti al trattamento e, quando applicabile, richiedere la portabilità dei dati. Puoi inviare una richiesta a <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>. Il titolare risponderà nei termini previsti dalla normativa.</p>
+<p>Hai inoltre diritto di proporre reclamo all'autorità di controllo competente, in Italia il <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.</p>
 
-    <!-- ENGLISH -->
-    <article lang="en">
-      <p class="language-label" id="en">English</p>
-      <h2>PrivTools Privacy Policy</h2>
-      <p>Last updated: October 28, 2026</p>
-      <p>
-        This policy applies to software applications distributed under
-        the <strong>PrivTools</strong> brand. The applications currently
-        covered are listed below. The list may be updated as new apps
-        are released.
-      </p>
+<h2>9. Minori, modifiche e nuove app</h2>
+<p>Le app incluse e le loro caratteristiche saranno indicate in questa pagina. Se una nuova app introduce trattamenti differenti, l'informativa sarà aggiornata prima di descriverla come coperta dalle stesse pratiche. Questa pagina può essere modificata anche per riflettere cambiamenti normativi o tecnici.</p>
+</article>
 
-      <h3>Covered applications</h3>
-      <div class="app">
-        <p><strong>Priv-TimeCalc</strong></p>
-        <p>
-          A time calculator for adding and subtracting durations and
-          converting between units of time.
-        </p>
-        <p>
-          Under its current design, calculations are performed locally
-          on the device. Values entered and results are not transmitted
-          by the developer to remote servers. The app does not require
-          an account and does not intentionally integrate third-party
-          advertising or analytics tools.
-        </p>
-      </div>
+<article lang="en">
+<h2 id="en">Privacy Policy — PrivTools</h2>
+<p class="muted">Last updated: October 28, 2026</p>
+<h3>Scope and controller</h3>
+<p>This policy applies to software distributed under the <strong>PrivTools</strong> brand. The app list will be updated as new applications are released.</p>
+<p><strong>Controller:</strong> SIMONE CECERE, independent developer of PrivTools.<br><strong>Privacy contact:</strong> <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.</p>
+<h3>Currently covered app: Priv-TimeCalc</h3>
+<p>Priv-TimeCalc adds and subtracts durations and converts time units. Calculations are performed locally on the device. Under its current verified behavior, values entered and results are not transmitted by the developer to remote servers. The app does not require an account and does not intentionally include advertising or third-party analytics.</p>
+<h3>Data and purposes</h3>
+<p>Entered values are used locally to perform the requested calculations and display results. If you choose to copy a result, the app uses the operating system clipboard; subsequent handling depends on the operating system and other apps you use.</p>
+<p>The app does not intentionally collect data for profiling, advertising or analytics. If a future app processes personal data, this policy will be updated to describe the relevant purposes and legal basis where required.</p>
+<h3>Emails, recipients and retention</h3>
+<p>If you email the privacy contact, your message will be used to respond and manage the communication. It may be handled by the controller and the technical email providers needed to deliver it. Messages are retained as long as necessary to handle the request and, where applicable, meet legal obligations or protect legal claims.</p>
+<h3>Website hosting</h3>
+<p>This page is hosted by GitHub Pages. The hosting provider may process technical data, such as IP addresses and request logs, to operate and secure the service. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>. Website hosting is separate from the app's local calculations.</p>
+<h3>Your rights and complaints</h3>
+<p>Where data protection law applies, you may have rights to access, rectify, erase or restrict processing, object to processing and, where applicable, data portability. Contact <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>. You may also lodge a complaint with your competent supervisory authority; in Italy, the <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.</p>
+<h3>Future apps and changes</h3>
+<p>New apps will be added with information about their own data practices. This policy may be updated when features, technical practices or applicable requirements change.</p>
+</article>
 
-      <h3>Data practices across the apps</h3>
-      <p>
-        Data practices may differ between apps in the suite. The
-        app-specific information on this page takes precedence over
-        general descriptions. New apps will be added with information
-        about their features and any data they may process.
-      </p>
+<article lang="fr">
+<h2 id="fr">Politique de confidentialité — PrivTools</h2>
+<p class="muted">Dernière mise à jour : 28 octobre 2026</p>
+<h3>Champ d'application et responsable</h3>
+<p>Cette politique s'applique aux applications distribuées sous la marque <strong>PrivTools</strong>. La liste sera mise à jour à mesure que de nouvelles applications seront publiées.</p>
+<p><strong>Responsable du traitement :</strong> SIMONE CECERE, développeur indépendant de PrivTools.<br><strong>Contact :</strong> <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.</p>
+<h3>Application actuellement couverte : Priv-TimeCalc</h3>
+<p>Priv-TimeCalc permet d'additionner et de soustraire des durées et de convertir des unités de temps. Les calculs sont effectués localement sur l'appareil. Selon son fonctionnement actuel vérifié, les valeurs saisies et les résultats ne sont pas transmis par le développeur à des serveurs distants. L'application ne nécessite aucun compte et n'intègre pas intentionnellement de publicité ni d'outils d'analyse tiers.</p>
+<h3>Données et finalités</h3>
+<p>Les valeurs saisies sont utilisées localement pour effectuer les calculs demandés et afficher les résultats. Si vous copiez un résultat, l'application utilise le presse-papiers du système ; le traitement ultérieur dépend du système et des autres applications utilisées.</p>
+<p>L'application ne collecte pas intentionnellement de données à des fins de profilage, de publicité ou d'analyse. Si une future application traite des données personnelles, cette politique sera mise à jour pour préciser les finalités et la base juridique pertinente, lorsque cela est requis.</p>
+<h3>Emails, destinataires et conservation</h3>
+<p>Les messages envoyés au contact de confidentialité sont utilisés pour répondre et gérer la communication. Ils peuvent être traités par le responsable et les fournisseurs techniques de messagerie nécessaires. Ils sont conservés le temps nécessaire au traitement de la demande et, le cas échéant, au respect d'obligations légales ou à la défense de droits.</p>
+<h3>Hébergement du site</h3>
+<p>Cette page est hébergée par GitHub Pages. Le fournisseur peut traiter des données techniques, telles que les adresses IP et les journaux de requêtes, afin d'assurer et de sécuriser le service. Consultez la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">politique de confidentialité de GitHub</a>. L'hébergement est distinct des calculs locaux de l'application.</p>
+<h3>Vos droits et réclamations</h3>
+<p>Lorsque la législation sur la protection des données s'applique, vous pouvez notamment demander l'accès, la rectification, l'effacement ou la limitation des données, vous opposer au traitement et, le cas échéant, demander la portabilité. Contactez <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>. Vous pouvez également déposer une réclamation auprès de l'autorité de contrôle compétente ; en Italie, le <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.</p>
+<h3>Nouvelles applications et modifications</h3>
+<p>Les nouvelles applications seront ajoutées avec leurs pratiques propres. Cette politique pourra être mise à jour en cas de modification des fonctionnalités, des pratiques techniques ou des exigences applicables.</p>
+</article>
 
-      <h3>Device clipboard</h3>
-      <p>
-        In Priv-TimeCalc, when you choose to copy a result, the app uses
-        the operating system's clipboard functionality. Copied content
-        is subject to the behavior and settings of your device and
-        operating system.
-      </p>
+<article lang="es">
+<h2 id="es">Política de privacidad — PrivTools</h2>
+<p class="muted">Última actualización: 28 de octubre de 2026</p>
+<h3>Ámbito y responsable</h3>
+<p>Esta política se aplica a las aplicaciones distribuidas bajo la marca <strong>PrivTools</strong>. La lista se actualizará cuando se publiquen nuevas aplicaciones.</p>
+<p><strong>Responsable del tratamiento:</strong> SIMONE CECERE, desarrollador independiente de PrivTools.<br><strong>Contacto:</strong> <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.</p>
+<h3>Aplicación incluida actualmente: Priv-TimeCalc</h3>
+<p>Priv-TimeCalc permite sumar y restar duraciones y convertir unidades de tiempo. Los cálculos se realizan localmente en el dispositivo. Según su funcionamiento actual verificado, el desarrollador no transmite los valores introducidos ni los resultados a servidores remotos. La aplicación no requiere una cuenta ni integra intencionadamente publicidad o herramientas de análisis de terceros.</p>
+<h3>Datos y finalidades</h3>
+<p>Los valores introducidos se utilizan localmente para realizar los cálculos solicitados y mostrar los resultados. Si decides copiar un resultado, la aplicación utiliza el portapapeles del sistema operativo; el tratamiento posterior depende del sistema y de las demás aplicaciones utilizadas.</p>
+<p>La aplicación no recoge intencionadamente datos para elaborar perfiles, publicidad o análisis. Si una futura aplicación trata datos personales, esta política se actualizará para explicar las finalidades y la base jurídica pertinente cuando sea necesario.</p>
+<h3>Correos, destinatarios y conservación</h3>
+<p>Los mensajes enviados al contacto de privacidad se utilizan para responder y gestionar la comunicación. Pueden ser tratados por el responsable y por los proveedores técnicos de correo necesarios. Se conservan durante el tiempo necesario para atender la solicitud y, cuando corresponda, cumplir obligaciones legales o defender derechos.</p>
+<h3>Alojamiento del sitio</h3>
+<p>Esta página está alojada mediante GitHub Pages. El proveedor puede tratar datos técnicos, como direcciones IP y registros de solicitudes, para prestar y proteger el servicio. Consulta la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">política de privacidad de GitHub</a>. El alojamiento web es independiente de los cálculos locales de la aplicación.</p>
+<h3>Tus derechos y reclamaciones</h3>
+<p>Cuando se aplique la legislación de protección de datos, puedes tener derecho a acceder, rectificar, suprimir o limitar el tratamiento, oponerte y, cuando corresponda, solicitar la portabilidad. Contacta con <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>. También puedes presentar una reclamación ante la autoridad de control competente; en Italia, el <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.</p>
+<h3>Nuevas aplicaciones y cambios</h3>
+<p>Las nuevas aplicaciones se añadirán con información sobre sus propias prácticas. Esta política podrá actualizarse si cambian las funciones, las prácticas técnicas o los requisitos aplicables.</p>
+</article>
 
-      <h3>Operating system and distribution</h3>
-      <p>
-        The operating system, the App Store and services used to
-        distribute or update apps may process technical data under
-        their own practices and privacy policies. Such processing is
-        separate from operations performed directly by PrivTools apps.
-      </p>
+<article lang="de">
+<h2 id="de">Datenschutzerklärung — PrivTools</h2>
+<p class="muted">Letzte Aktualisierung: 28. Oktober 2026</p>
+<h3>Geltungsbereich und Verantwortlicher</h3>
+<p>Diese Erklärung gilt für Anwendungen, die unter der Marke <strong>PrivTools</strong> vertrieben werden. Die Liste wird bei der Veröffentlichung neuer Apps aktualisiert.</p>
+<p><strong>Verantwortlicher:</strong> SIMONE CECERE, unabhängiger Entwickler von PrivTools.<br><strong>Kontakt:</strong> <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.</p>
+<h3>Derzeit enthaltene App: Priv-TimeCalc</h3>
+<p>Priv-TimeCalc addiert und subtrahiert Zeitspannen und rechnet Zeiteinheiten um. Die Berechnungen erfolgen lokal auf dem Gerät. Nach dem derzeit überprüften Funktionsumfang überträgt der Entwickler eingegebene Werte und Ergebnisse nicht an entfernte Server. Die App erfordert kein Konto und enthält absichtlich weder Werbung noch Analysewerkzeuge von Drittanbietern.</p>
+<h3>Daten und Zwecke</h3>
+<p>Eingegebene Werte werden lokal zur Durchführung der angeforderten Berechnungen und zur Anzeige der Ergebnisse verwendet. Wenn du ein Ergebnis kopierst, nutzt die App die Zwischenablage des Betriebssystems. Die weitere Verarbeitung hängt vom Betriebssystem und den verwendeten Apps ab.</p>
+<p>Die App erhebt absichtlich keine Daten für Profiling, Werbung oder Analysen. Wenn eine zukünftige App personenbezogene Daten verarbeitet, wird diese Erklärung, soweit erforderlich, um die Zwecke und die maßgebliche Rechtsgrundlage ergänzt.</p>
+<h3>E-Mails, Empfänger und Aufbewahrung</h3>
+<p>Nachrichten an die Datenschutzkontaktadresse werden zur Beantwortung und Bearbeitung der Kommunikation verwendet. Sie können vom Verantwortlichen und den erforderlichen technischen E-Mail-Anbietern verarbeitet werden. Sie werden so lange aufbewahrt, wie es zur Bearbeitung der Anfrage und gegebenenfalls zur Erfüllung gesetzlicher Pflichten oder zur Rechtsverteidigung erforderlich ist.</p>
+<h3>Website-Hosting</h3>
+<p>Diese Seite wird über GitHub Pages gehostet. Der Anbieter kann technische Daten wie IP-Adressen und Anforderungsprotokolle verarbeiten, um den Dienst bereitzustellen und zu schützen. Weitere Informationen enthält die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Das Hosting ist von den lokalen Berechnungen der App getrennt.</p>
+<h3>Deine Rechte und Beschwerden</h3>
+<p>Soweit Datenschutzrecht anwendbar ist, kannst du Rechte auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung sowie Widerspruch und gegebenenfalls Datenübertragbarkeit haben. Kontaktiere <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>. Du kannst dich auch bei der zuständigen Aufsichtsbehörde beschweren; in Italien ist dies der <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>.</p>
+<h3>Neue Apps und Änderungen</h3>
+<p>Neue Apps werden mit Informationen zu ihren jeweiligen Datenpraktiken ergänzt. Diese Erklärung kann bei Änderungen der Funktionen, technischen Praktiken oder geltenden Anforderungen aktualisiert werden.</p>
+</article>
+</main>
 
-      <h3>Privacy of this website</h3>
-      <p>
-        This page is hosted using GitHub Pages. GitHub may process
-        technical data, such as IP addresses and request logs, to
-        provide and secure the service. For details, see
-        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-          GitHub's Privacy Statement
-        </a>.
-      </p>
-
-      <h3>Updates and contact</h3>
-      <p>
-        This policy may be updated when new apps are released or when
-        app features or data practices change.
-      </p>
-      <p>
-        For privacy questions, contact:
-        <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-      </p>
-    </article>
-
-    <!-- FRANÇAIS -->
-    <article lang="fr">
-      <p class="language-label" id="fr">Français</p>
-      <h2>Politique de confidentialité de PrivTools</h2>
-      <p>Dernière mise à jour : 28 octobre 2026</p>
-      <p>
-        Cette politique s'applique aux applications logicielles
-        distribuées sous la marque <strong>PrivTools</strong>.
-        Les applications actuellement couvertes sont listées ci-dessous.
-        Cette liste pourra être mise à jour lors de la publication
-        de nouvelles applications.
-      </p>
-
-      <h3>Applications concernées</h3>
-      <div class="app">
-        <p><strong>Priv-TimeCalc</strong></p>
-        <p>
-          Une calculatrice de temps permettant d'additionner et de
-          soustraire des durées et de convertir différentes unités
-          de temps.
-        </p>
-        <p>
-          Dans son fonctionnement actuel, les calculs sont effectués
-          localement sur l'appareil. Les valeurs saisies et les
-          résultats ne sont pas transmis par le développeur à des
-          serveurs distants. L'application ne nécessite aucun compte
-          et n'intègre pas intentionnellement de publicité ni d'outils
-          d'analyse tiers.
-        </p>
-      </div>
-
-      <h3>Traitement des données dans les applications</h3>
-      <p>
-        Les pratiques relatives aux données peuvent varier d'une
-        application à l'autre. Les informations propres à chaque
-        application prévalent sur les descriptions générales de cette
-        page. Les nouvelles applications seront ajoutées avec des
-        informations sur leurs fonctionnalités et les éventuelles
-        données traitées.
-      </p>
-
-      <h3>Presse-papiers de l'appareil</h3>
-      <p>
-        Dans Priv-TimeCalc, lorsque vous choisissez de copier un
-        résultat, l'application utilise la fonction presse-papiers
-        du système d'exploitation. Le contenu copié dépend du
-        fonctionnement et des réglages de l'appareil et du système.
-      </p>
-
-      <h3>Système d'exploitation et distribution</h3>
-      <p>
-        Le système d'exploitation, l'App Store et les services utilisés
-        pour distribuer ou mettre à jour les applications peuvent
-        traiter des données techniques conformément à leurs propres
-        pratiques et politiques de confidentialité. Ces traitements
-        sont distincts de ceux effectués directement par les
-        applications PrivTools.
-      </p>
-
-      <h3>Confidentialité de ce site</h3>
-      <p>
-        Cette page est hébergée via GitHub Pages. GitHub peut traiter
-        des données techniques, telles que les adresses IP et les
-        journaux de requêtes, afin de fournir et de sécuriser le service.
-        Consultez la
-        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-          politique de confidentialité de GitHub
-        </a>.
-      </p>
-
-      <h3>Mises à jour et contact</h3>
-      <p>
-        Cette politique pourra être mise à jour lors de la publication
-        de nouvelles applications ou en cas de modification de leurs
-        fonctionnalités ou pratiques relatives aux données.
-      </p>
-      <p>
-        Pour toute question concernant la confidentialité, contactez :
-        <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-      </p>
-    </article>
-
-    <!-- ESPAÑOL -->
-    <article lang="es">
-      <p class="language-label" id="es">Español</p>
-      <h2>Política de privacidad de PrivTools</h2>
-      <p>Última actualización: 28 de octubre de 2026</p>
-      <p>
-        Esta política se aplica a las aplicaciones de software
-        distribuidas bajo la marca <strong>PrivTools</strong>.
-        Las aplicaciones incluidas actualmente se enumeran a
-        continuación. La lista podrá actualizarse cuando se publiquen
-        nuevas aplicaciones.
-      </p>
-
-      <h3>Aplicaciones incluidas</h3>
-      <div class="app">
-        <p><strong>Priv-TimeCalc</strong></p>
-        <p>
-          Una calculadora de tiempo para sumar y restar duraciones
-          y convertir entre distintas unidades de tiempo.
-        </p>
-        <p>
-          Según su funcionamiento actual, los cálculos se realizan
-          localmente en el dispositivo. El desarrollador no transmite
-          los valores introducidos ni los resultados a servidores
-          remotos. La aplicación no requiere una cuenta ni integra
-          intencionadamente publicidad o herramientas de análisis
-          de terceros.
-        </p>
-      </div>
-
-      <h3>Tratamiento de datos en las aplicaciones</h3>
-      <p>
-        Las prácticas relativas a los datos pueden variar entre las
-        aplicaciones de la suite. La información específica de cada
-        aplicación prevalece sobre las descripciones generales de esta
-        página. Las nuevas aplicaciones se añadirán con información
-        sobre sus funciones y los datos que puedan tratar.
-      </p>
-
-      <h3>Portapapeles del dispositivo</h3>
-      <p>
-        En Priv-TimeCalc, cuando eliges copiar un resultado, la
-        aplicación utiliza la función de portapapeles del sistema
-        operativo. El contenido copiado está sujeto al funcionamiento
-        y a la configuración del dispositivo y del sistema.
-      </p>
-
-      <h3>Sistema operativo y distribución</h3>
-      <p>
-        El sistema operativo, la App Store y los servicios utilizados
-        para distribuir o actualizar aplicaciones pueden tratar datos
-        técnicos conforme a sus propias prácticas y políticas de
-        privacidad. Este tratamiento es independiente de las
-        operaciones realizadas directamente por las aplicaciones
-        PrivTools.
-      </p>
-
-      <h3>Privacidad de este sitio web</h3>
-      <p>
-        Esta página está alojada mediante GitHub Pages. GitHub puede
-        tratar datos técnicos, como direcciones IP y registros de
-        solicitudes, para prestar y proteger el servicio. Consulta la
-        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-          política de privacidad de GitHub
-        </a>.
-      </p>
-
-      <h3>Actualizaciones y contacto</h3>
-      <p>
-        Esta política podrá actualizarse cuando se publiquen nuevas
-        aplicaciones o cambien sus funciones o prácticas de tratamiento
-        de datos.
-      </p>
-      <p>
-        Para consultas sobre privacidad, escribe a:
-        <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-      </p>
-    </article>
-
-    <!-- DEUTSCH -->
-    <article lang="de">
-      <p class="language-label" id="de">Deutsch</p>
-      <h2>Datenschutzerklärung von PrivTools</h2>
-      <p>Letzte Aktualisierung: 28. Oktober 2026</p>
-      <p>
-        Diese Erklärung gilt für Softwareanwendungen, die unter der
-        Marke <strong>PrivTools</strong> vertrieben werden. Die derzeit
-        erfassten Anwendungen sind unten aufgeführt. Die Liste kann
-        bei der Veröffentlichung neuer Apps aktualisiert werden.
-      </p>
-
-      <h3>Enthaltene Anwendungen</h3>
-      <div class="app">
-        <p><strong>Priv-TimeCalc</strong></p>
-        <p>
-          Ein Zeitrechner zum Addieren und Subtrahieren von Zeitspannen
-          sowie zum Umrechnen zwischen verschiedenen Zeiteinheiten.
-        </p>
-        <p>
-          Nach dem derzeitigen Funktionsumfang werden Berechnungen
-          lokal auf dem Gerät ausgeführt. Eingegebene Werte und
-          Ergebnisse werden vom Entwickler nicht an entfernte Server
-          übertragen. Die App erfordert kein Konto und integriert
-          absichtlich weder Werbung noch Analysewerkzeuge von
-          Drittanbietern.
-        </p>
-      </div>
-
-      <h3>Datenverarbeitung in den Apps</h3>
-      <p>
-        Die Datenschutzpraktiken können sich zwischen den Apps der
-        Suite unterscheiden. Die Angaben zur jeweiligen App haben
-        Vorrang vor allgemeinen Beschreibungen auf dieser Seite.
-        Neue Apps werden mit Informationen zu ihren Funktionen und
-        gegebenenfalls verarbeiteten Daten ergänzt.
-      </p>
-
-      <h3>Zwischenablage des Geräts</h3>
-      <p>
-        Wenn du in Priv-TimeCalc ein Ergebnis kopierst, verwendet
-        die App die Zwischenablagefunktion des Betriebssystems.
-        Für kopierte Inhalte gelten das Verhalten und die Einstellungen
-        des Geräts und des Betriebssystems.
-      </p>
-
-      <h3>Betriebssystem und Vertrieb</h3>
-      <p>
-        Das Betriebssystem, der App Store und Dienste zur Verteilung
-        oder Aktualisierung von Apps können technische Daten gemäß
-        ihren eigenen Datenschutzpraktiken und -richtlinien
-        verarbeiten. Diese Verarbeitung ist von den Vorgängen
-        innerhalb der PrivTools-Apps getrennt.
-      </p>
-
-      <h3>Datenschutz dieser Website</h3>
-      <p>
-        Diese Seite wird über GitHub Pages gehostet. GitHub kann
-        technische Daten wie IP-Adressen und Anforderungsprotokolle
-        verarbeiten, um den Dienst bereitzustellen und zu schützen.
-        Weitere Informationen findest du in der
-        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-          Datenschutzerklärung von GitHub
-        </a>.
-      </p>
-
-      <h3>Änderungen und Kontakt</h3>
-      <p>
-        Diese Erklärung kann aktualisiert werden, wenn neue Apps
-        veröffentlicht werden oder sich deren Funktionen oder
-        Datenverarbeitungspraktiken ändern.
-      </p>
-      <p>
-        Bei Fragen zum Datenschutz kontaktiere:
-        <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-      </p>
-    </article>
-  </main>
-
-  <footer>
-    PrivTools · Privacy Policy / Informativa sulla privacy
-  </footer>
+<footer>
+PrivTools · Privacy Policy / Informativa sulla privacy
+</footer>
 </body>
 </html>
